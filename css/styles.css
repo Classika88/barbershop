@@ -51,16 +51,19 @@ body {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   color: var(--title-dark-theme-color);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.33;
-  letter-spacing: 1.08px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   border-radius: 25px;
-  border: 1px solid #ff6c00;
+  border: 1px solid var(--accent-color);
   cursor: pointer;
+  background-color: transparent;
 }
 
 /*----------------HEADER-----------------*/
@@ -70,7 +73,22 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header>.container {
+  display: flex;
+  align-items: center;
+}
 
+.header-logo {
+  margin-right: 131px;
+}
+.header-navigation {
+  margin-right: auto;
+}
+.header-list {
+  display: flex;
+ 
+  gap: 30px;
+}
 .header-link {
   font-weight: 600;
   font-size: 12px;
@@ -92,6 +110,7 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
+  margin-right: 43px;
 }
 
 .header .btn {
@@ -100,12 +119,16 @@ body {
 
 /*---------------HERO--------------*/
 
-.hero {
-  background-color: gray;
+.hero .container {
+  display: flex;
+ }
+.hero-list {
+  width: 100px;
 }
-
 .hero-content {
   padding: 272px 100px 208px;
+  background-color: gray;
+  flex-grow: 1;
 
 }
 
@@ -150,7 +173,16 @@ body {
 .about {
   
 }
+
+.about .container {
+  display: flex;
+  gap: 30px;
+  padding-right: 115px;
+}
 .about-list {
+  display: flex;
+  gap: 30px;
+  
 }
 .about-item {
 }
@@ -203,12 +235,25 @@ body {
   margin-bottom: 44px;
 }
 
+.price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .price-list {
   border: 1px solid white;
   padding: 30px 20px;
+  width: calc((100% - 30px) /2);
+  
   }
 
 .price-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item:not(last-child) {
+  margin-bottom: 20px;
 }
 
 .price-text {
@@ -228,8 +273,17 @@ body {
 }
 
 /*----------------BENEFITS-----------*/
-
+.benefits .container {
+  display: flex;
+  padding-left: 115px;
+  gap: 130px;
+ 
+}
 .benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+
 }
 .benefits-item {
   width: 170px;
@@ -238,6 +292,15 @@ body {
   text-align: center;
   padding: 20px 24px;
 }
+
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .benefits-number {
   color: var(--pre-title-color);
   font-size: 42px;
@@ -253,6 +316,12 @@ body {
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
+}
+
+.benefits-wrap {
+  max-width: 500px;
+  padding-top: 9px;
+
 }
 .benefits .pre-title {
   margin-bottom: var(--typical-margin);
@@ -288,8 +357,11 @@ body {
   margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 .barbers-item {
+  width: calc((100% - 30px * 2) / 3);
 }
 .barbers-name {
   color: var(--pre-title-color);
@@ -310,6 +382,8 @@ body {
   margin-bottom: 30px;
 }
 .social {
+  
+
 }
 .social-item {
 }
@@ -324,8 +398,12 @@ body {
   margin-bottom: 44px;
  }
 .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .gallery-item {
+  width: calc((100% - 30px * 3) /4);
 }
 
 /*--------------------CONTACT-WRAP----------------*/
@@ -333,8 +411,13 @@ body {
   background-color: #191C26;
   
 }
+
+.contact-wrap .container {
+  display: flex;
+}
 .online {
   padding-top: 130px;
+  width: calc(50% + 15px);
 }
 
 .online-title {
@@ -349,6 +432,8 @@ body {
 .contacts {
   padding-top: 130px;
   padding-bottom: 120px;
+  padding-left: 105px;
+  width: calc(50% - 15px);
 }
 
 .contacts-title {
