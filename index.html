@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
-    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/favicon.png"
+      type="image/png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +21,8 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="" class="header-logo">
-          <img src="img/logo.svg" alt="site logo" />
+        <a href="/" class="header-logo">
+          <img src="img/logo.svg" alt="site logo" width="69" height="56" />
         </a>
         <nav class="header-navigation">
           <ul class="header-list">
@@ -37,7 +41,9 @@
           </ul>
         </nav>
         <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn" type="button">Online-booking</button>
+        <button class="btn" type="button" data-modal-open>
+          Online-booking
+        </button>
       </div>
     </header>
     <main>
@@ -94,7 +100,7 @@
             </li>
           </ul>
           <div class="about-wrap">
-            <p class="pre-title">About</p>
+            <p class="pre-title psevdo">About</p>
             <h2 class="about-title">Best Barbershop in your city</h2>
             <p class="about-after-title">
               If you want to add more confidence to your image, you should
@@ -102,10 +108,10 @@
             </p>
             <p class="about-text">
               We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our master,
-              you will never be the same again. We are a team that is always "on
-              the same wave" with clients. Therefore, we are always ready to
-              improve everyone who comes to us!
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
             </p>
             <button type="button" class="btn">Online-booking</button>
           </div>
@@ -160,19 +166,31 @@
         <div class="container">
           <ul class="benefits-list">
             <li class="benefits-item">
+              <!-- <div class="benefits-group"> -->
               <span class="benefits-number">600</span>
+              <!-- <span class="benefits-psevdo">+</span> -->
+              <!-- </div> -->
               <p class="benefits-text">Satisfied customers per day</p>
             </li>
             <li class="benefits-item">
+              <!-- <div class="benefits-group"> -->
               <span class="benefits-number">50</span>
+              <!-- <span class="benefits-psevdo">+</span> -->
+              <!-- </div> -->
               <p class="benefits-text">Awards for excellent service</p>
             </li>
             <li class="benefits-item">
+              <!-- <div class="benefits-group"> -->
               <span class="benefits-number">20</span>
+              <!-- <span class="benefits-psevdo">+</span> -->
+              <!-- </div> -->
               <p class="benefits-text">Kyiv’s best barbers</p>
             </li>
             <li class="benefits-item">
+              <!-- <div class="benefits-group"> -->
               <span class="benefits-number">100</span>
+              <!-- <span class="benefits-psevdo">+</span>
+              </div> -->
               <p class="benefits-text">Gifts for regular customers</p>
             </li>
           </ul>
@@ -180,8 +198,8 @@
             <p class="pre-title">Old traditional school</p>
             <h2 class="benefits-title">¿Why people come to us?</h2>
             <p class="benefits-after-title">
-              Only good things are said about us. But it's better to see and feel
-              1 time than read 10 times.
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
             </p>
           </div>
         </div>
@@ -192,120 +210,144 @@
           <h2 class="barbers-title">Our barbers</h2>
           <ul class="barbers-list">
             <li class="barbers-item">
-              <img
-                src="img/barbers-img-1.jpg"
-                alt="Photo of John Smith"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="img/barbers-img-1.jpg"
+                  alt="Photo of John Smith"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, ipsum fugiat maiores magnam perspiciatis nesciunt.
+                  Ullam architecto debitis perspiciatis, voluptas hic nulla quam
+                  earum velit! Autem porro est eius odit.
+                </p>
+              </div>
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-position">Extreme Barber</p>
               <ul class="social">
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="img/barbers-img-2.jpg"
-                alt="Photo of Michele Doe"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="img/barbers-img-2.jpg"
+                  alt="Photo of Michele Doe"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, ipsum fugiat maiores magnam perspiciatis nesciunt.
+                  Ullam architecto debitis perspiciatis, voluptas hic nulla quam
+                  earum velit! Autem porro est eius odit.
+                </p>
+              </div>
               <h3 class="barbers-name">Michele Doe</h3>
               <p class="barbers-position">Extreme Barber</p>
               <ul class="social">
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </li>
             <li class="barbers-item">
-              <img
-                src="img/barbers-img-3.jpg"
-                alt="Photo of Alan Black"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="img/barbers-img-3.jpg"
+                  alt="Photo of Alan Black"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Temporibus, ipsum fugiat maiores magnam perspiciatis nesciunt.
+                  Ullam architecto debitis perspiciatis, voluptas hic nulla quam
+                  earum velit! Autem porro est eius odit.
+                </p>
+              </div>
               <h3 class="barbers-name">Alan Black</h3>
               <p class="barbers-position">Extreme Barber</p>
               <ul class="social">
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social-item">
                   <a class="social-link" href="">
-                    <svg>
-                      <use></use>
+                    <svg class="social-icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
@@ -361,34 +403,34 @@
           </section>
           <section class="contacts">
             <h2 class="contacts-title">Contacts</h2>
-          
-          <address class="address">
-            <ul class="contacts-list">
-              <li class="contacts-item">
-                <a
-                  href="https://goo.gl/maps/hj6HByPfPeHMykJ67"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="contacts-link bold"
-                  >st. Vasilkivska, 7A<br />
-                  Kyiv, 08132</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a href="tel:+380441111111" class="contacts-link"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li class="contacts-item email">
-                <a href="mailto:barbershop@email.com" class="contacts-link"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <h3 class="contacts-schedule">Working hours</h3>
-          <p class="contacts-text">Every day from 9:00 to 22:00</p>
-        </section>
+
+            <address class="address">
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a
+                    href="https://goo.gl/maps/hj6HByPfPeHMykJ67"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="contacts-link bold"
+                    >st. Vasilkivska, 7A<br />
+                    Kyiv, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="tel:+380441111111" class="contacts-link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item email">
+                  <a href="mailto:barbershop@email.com" class="contacts-link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <h3 class="contacts-schedule">Working hours</h3>
+            <p class="contacts-text">Every day from 9:00 to 22:00</p>
+          </section>
         </div>
       </div>
     </main>
@@ -417,5 +459,66 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="icon-modal-close" width="16" height="16">
+            <use href="/img/symbol-defs.svg#navigation_close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Online-booking</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <span>Enter your name and surname</span>
+            <span class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Elon Musk"
+                minlength="2"
+                required
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="/img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label"
+            ><span>Enter your phone number</span
+            ><span class="input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+                placeholder="+380(00)000-00-00"
+                minlength="13"
+                title="+380(00)000-00-00"
+                pattern="[\+]\d{3}[\(]\d{2}[\)]\d{3}[\-]\d{2}[\-]\d{2}"
+                required />
+              <svg class="input-icon" width="18" height="18">
+                <use href="/img/symbol-defs.svg#icon-phone"></use></svg></span>
+          </label>
+          <label class="modal-label"
+            ><span>Enter your message</span>
+            <textarea
+              name="user-message"
+              class="modal-text"
+              placeholder="Message"
+            ></textarea>
+          </label>
+          <label class="modal-label checkbox"
+            ><input
+              type="checkbox"
+              class="input-check"
+              name="privacy"
+              value="true"
+            /><span class="checkbox-text">I agree with the privacy policy</span>
+          </label>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
