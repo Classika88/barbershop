@@ -761,7 +761,7 @@ body {
 }
 
 .modal-input:required {
-  border-color: #ed0f13;
+  border-color: var(--accent-color);
 }
 .modal-input:focus {
   border-color: var(--accent-color);
